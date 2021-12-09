@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-top: 1px solid #e6e6e6;
+    color: gray;
+    align-items: center;
+    font-size: 15px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 20%), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgb(0 0 0 / 20%), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgb(0 0 0 / 20%);
+}
+
+.btn {
+    margin: 3px;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid rgba(175, 47, 47, 0.1);
+}
+
+.btn[active="true"] {
+    border: 1px solid rgba(175, 47, 47, 0.2);
+}
+.clear-completed{
+    cursor: pointer;
+}
+.clear-completed:hover {
+    text-decoration: underline;
+}
