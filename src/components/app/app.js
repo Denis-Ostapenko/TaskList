@@ -8,7 +8,6 @@ import AppFooter from '../app-footer/app-footer';
 import './app.css';
 
 export default class App extends Component {
-
   state = {
     taskData: JSON.parse(localStorage.getItem('taskData')) || [],
   };
@@ -103,7 +102,7 @@ export default class App extends Component {
   createTaskItem(label) {
     const { taskData } = this.state;
     let id = 1;
-    if ([...taskData][taskData.length - 1]){
+    if ([...taskData][taskData.length - 1]) {
       id = [...taskData][taskData.length - 1].id + 1;
     }
     return {
@@ -113,7 +112,7 @@ export default class App extends Component {
       data: new Date(),
       id,
     };
-  }
+  };
 
   render() {
     const { taskData } = this.state;
