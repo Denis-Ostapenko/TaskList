@@ -2,7 +2,7 @@
   "name": "my-app1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://denis-ostapenko.github.io/Task_List1/",
+  "homepage": "https://denis-ostapenko.github.io/TaskList/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
@@ -23,8 +23,7 @@
     "lint:fix": "eslint ./src --fix --color",
     "format": "prettier --write src/**/*.js",
     "prepare": "husky install",
-    "predploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
