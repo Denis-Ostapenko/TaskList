@@ -12,4 +12,4 @@ ES6+, React.js
 [Ссылка на проект](https://denis-ostapenko.github.io/TaskList/)
 
 ## Gif Demo
-![gif demo project](https://recordit.co/SiNohuIk62)
+![gif demo project](http://g.recordit.co/SiNohuIk62.gif)
